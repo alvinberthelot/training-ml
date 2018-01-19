@@ -1,7 +1,7 @@
 from sklearn import datasets
 
-# Example datasets vgiven by library
-boston = datasets.load_boston()
+import pandas as pandas
 
-# Print features of Boston datasets
-print(boston.keys())
+input_file = "pizzas.csv"
+pizzas = pandas.read_csv(input_file, header = 0)
+print(pizzas.keys())
